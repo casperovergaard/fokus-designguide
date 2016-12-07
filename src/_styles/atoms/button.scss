@@ -1,0 +1,17 @@
+.btn {
+  background: palette(color-main, light);
+  padding: 1.5rem 3rem;
+  border-radius: 10px;
+  color: palette(white);
+  text-transform: uppercase;
+
+  // Elements
+  &__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  // Modifiers
+}

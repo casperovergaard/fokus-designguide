@@ -1,0 +1,31 @@
+// Normalize Styles
+@import 'node_modules/normalize-scss/sass/normalize';
+
+// Import Framework
+@import 'vendor/foundation-sites/foundation.scss';
+$grid-row-width: 1120px;
+$breakpoints: (
+  small: 0px,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+@include foundation-flex-grid;
+@include foundation-off-canvas;
+@include foundation-accordion-menu;
+
+// Import Base settings
+@import 'base/base';
+
+// Import Vendor
+@import 'vendor/vendor';
+
+// Import Atoms
+@import 'atoms/atoms';
+
+// Import Molecules
+@import 'molecules/molecules';
+
+// Import Organisms
+@import 'organisms/organisms';

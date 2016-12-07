@@ -1,0 +1,47 @@
+.menu {
+  position: fixed;
+  width: calc(100% / 4);
+  height: 100%;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: $white;
+  border-right: 1px solid $gray-3;
+
+  @include bp(medium) {
+    @include flexbox(column, flex-start, center)
+  }
+
+  &__item {
+    @include flexbox(column, flex-start, top)
+    width: 100%;
+    border-bottom: 1px solid $gray-3;
+
+    &:first-child {
+      border-top: 1px solid $gray-3;
+    }
+
+    a {
+      padding: $space;
+    }
+  }
+
+  &__sub {
+    list-style-type: none;
+    padding: $space;
+    background: $gray-3;
+
+    li {
+      margin-bottom: $space;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+
+      }
+    }
+  }
+
+}

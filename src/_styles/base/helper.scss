@@ -1,0 +1,74 @@
+/*
+** Layout
+*/
+
+// Reset gutters
+.gutter-reset {
+  padding: 0;
+}
+.gutter-reset--left {
+  @include breakpoint(medium) {
+    padding-left: 0;
+  }
+}
+
+// Top and bottom spacing
+.gutter {
+  padding-bottom: $space;
+  padding-top: $space;
+}
+
+.gutter--lg {
+  padding-top: $space*2;
+  padding-bottom: $space*2;
+}
+
+// Top spacing
+.gutter-top {
+  padding-top: $space;
+}
+
+.gutter-top--lg {
+  padding-top: $space*2;
+}
+
+// Bottom spacing
+.gutter-bottom {
+  padding-bottom: $space;
+}
+
+.gutter-bottom--lg {
+  padding-bottom: $space*2;
+}
+
+// Flexbox objects
+.fb-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+}
+
+// Visibility
+.mobile-show {
+  display: block;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.mobile-hide {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: block;
+  }
+}
