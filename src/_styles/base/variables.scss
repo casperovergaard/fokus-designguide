@@ -60,11 +60,11 @@ $gray-3           : $color-base-gray-3;
 $gray-4           : $color-base-gray-4;
 
 /* Font families */
-$ff-light        :   "";
-$ff-regular      :   "";
-$ff-medium       :   "";
-$ff-bold         :   "";
-$ff-black        :   "";
+$ff-regular         : "Open Sans";
+$sg-ff-light        : "avenir-light";
+$sg-ff-light-italic : "avenir-lightitalic";
+$sg-ff-medium       : "avenir-medium";
+$sg-ff-black        : "avenir-black";
 
 
 /* Font weights */
@@ -76,32 +76,12 @@ $fw-black        : 900;
 
 
 /* Font sizes */
-$fs-0          : 0.750rem;   	// 12px
-$fs-1          : 0.875rem;   	// 14px
-$fs-2          : 1rem;       	// 16px
-$fs-3          : 1.375rem;   	// 22px
-$fs-4          : 2.5rem;     	// 40px
-$fs-5          : 3.75rem;     // 60px
-$fs-6          : 5rem;        // 80px
-$fs-7          : 6.875rem;    // 110px
-$fs-8          : 9.375rem;    // 150px
-
-$list-font-sizes:
-    ('fs-0' $fs-0),
-    ('fs-1' $fs-1),
-    ('fs-2' $fs-2),
-    ('fs-3' $fs-3),
-    ('fs-4' $fs-4),
-    ('fs-5' $fs-5),
-    ('fs-6' $fs-6),
-    ('fs-7' $fs-7),
-    ('fs-8' $fs-8);
-
-@each $size in $list-font-sizes {
-    .#{ nth($size, 1) } {
-        font-size: nth($size, 2);
-    }
-}
+$fs-print-body     : 0.75rem;   // 12px
+$fs-body           : 0.875rem;  // 14px
+$fs-h3             : 1.0625;    // 17px
+$fs-print-headline : 1.125rem;  // 18px
+$fs-h2             : 1.3125rem; // 21px
+$fs-h1             : 2.5rem;    // 40px
 
 
 /* Easings */

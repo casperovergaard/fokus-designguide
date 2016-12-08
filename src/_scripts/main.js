@@ -7,14 +7,14 @@
 import $ from 'jquery';
 import jQuery from 'jquery';
 import foundationPlugins from './components/foundationPlugins';
-
-// import videojs from 'video.js'
+import velocity from 'velocity-animate';
 
 // App
-// import FullscreenVideo from './components/fullscreenvideo'
+import smoothscroll from './components/smoothscroll'
 
 // Init
 $(() => {
-  // new FullscreenVideo();
+  $('.menu').velocity({ translateX: 0 });
+  new smoothscroll();
   $(document).foundation();
 });

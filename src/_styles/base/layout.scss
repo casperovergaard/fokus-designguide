@@ -10,3 +10,15 @@
 
 // Customize row layout
 .row { }
+
+// Sections
+
+main section {
+  min-height: 100vh;
+  height: 100%;
+  padding: $space*2;
+
+  @include bp(large) {
+    margin-left: 25%;
+  }
+}

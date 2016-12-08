@@ -3,113 +3,84 @@
 */
 
 /* Font Face load */
-/*
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700');
+
 @font-face {
-    font-family: "klavika-light";
-    font-style: normal;
-    font-weight: 300;
-    src:   url('../fonts/klavika-light-webfont.eot');
-    src:   url('../fonts/klavika-light-webfont.eot?#iefix') format('embedded-opentype'),
-           url("../fonts/klavika-light-webfont.otf") format("opentype"),
-           url('../fonts/klavika-light-webfont.ttf')  format('truetype'),
-           url("../fonts/klavika-light-webfont.woff2") format("woff2"),
-           url("../fonts/klavika-light-webfont.woff") format("woff");
+  font-family: 'avenir-light';
+  font-weight: 300;;
+  font-style: normal;
+  src: url('../fonts/avenir-light2.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir-light2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir-light2.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenir-light2.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenir-light2.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir-light2.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: "klavika-lightitalic";
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/klavika-lightitalic-webfont.eot');
-    src: url('../fonts/klavika-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url("../fonts/klavika-lightitalic-webfont.otf") format("opentype"),
-         url('../fonts/klavika-lightitalic-webfont.ttf')  format('truetype'),
-         url("../fonts/klavika-lightitalic-webfont.woff2") format("woff2"),
-         url("../fonts/klavika-lightitalic-webfont.woff") format("woff");
+ font-family: 'avenir-light-italic';
+ font-weight: 300;
+ font-style: italic;
+ src: url('../fonts/avenir-lightitalic.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/avenir-lightitalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/avenir-lightitalic.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/avenir-lightitalic.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/avenir-lightitalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/avenir-lightitalic.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: "klavika-medium";
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/klavika-medium-webfont.eot');
-    src: url('../fonts/klavika-medium-webfont.eot?#iefix') format('embedded-opentype'),
-         url("../fonts/klavika-medium-webfont.otf") format("opentype"),
-         url('../fonts/klavika-medium-webfont.ttf')  format('truetype'),
-         url("../fonts/klavika-medium-webfont.woff2") format("woff2"),
-         url("../fonts/klavika-medium-webfont.woff") format("woff");
+ font-family: 'avenir-medium';
+ font-weight: 500;
+ font-style: normal;
+ src: url('../fonts/avenir-medium.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/avenir-medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/avenir-medium.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/avenir-medium.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/avenir-medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/avenir-medium.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-    font-family: "klavika-mediumitalic";
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/klavika-mediumitalic-webfont.eot');
-    src: url('../fonts/klavika-mediumitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url("../fonts/klavika-mediumitalic-webfont.otf") format("opentype"),
-         url('../fonts/klavika-mediumitalic-webfont.ttf')  format('truetype'),
-         url("../fonts/klavika-mediumitalic-webfont.woff2") format("woff2"),
-         url("../fonts/klavika-mediumitalic-webfont.woff") format("woff");
+ font-family: 'avenir-black';
+ font-weight: 900;
+ font-style: normal;
+ src: url('../fonts/avenir-black.eot'); /* IE9 Compat Modes */
+ src: url('../fonts/avenir-black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../fonts/avenir-black.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../fonts/avenir-black.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../fonts/avenir-black.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../fonts/avenir-black.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-
-@font-face {
-    font-family: "klavika-regular";
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/klavika-regular-webfont.eot');
-    src: url('../fonts/klavika-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url("../fonts/klavika-regular-webfont.otf") format("opentype"),
-         url('../fonts/klavika-regular-webfont.ttf')  format('truetype'),
-         url("../fonts/klavika-regular-webfont.woff2") format("woff2"),
-         url("../fonts/klavika-regular-webfont.woff") format("woff");
-}
-
-@font-face {
-    font-family: "klavika-regularitalic";
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/klavika-regularitalic-webfont.eot');
-    src: url('../fonts/klavika-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url("../fonts/klavika-regularitalic-webfont.otf") format("opentype"),
-         url('../fonts/klavika-regularitalic-webfont.ttf')  format('truetype'),
-         url("../fonts/klavika-regularitalic-webfont.woff2") format("woff2"),
-         url("../fonts/klavika-regularitalic-webfont.woff") format("woff");
-}
-*/
 
 /* H1 */
 @mixin type-h1 {
-  font-family: $ff-regular;
-  font-size: $fs-4;
-  font-weight: 400;
 
   @include breakpoint(medium) {
-    font-size: $fs-5;
   }
 }
 
 h1,
 .h1 {
-  @include type-h1;
+
 }
 
 
 /* H2 */
 @mixin type-h2 {
-  font-family: $ff-regular;
-  font-size: $fs-3;
-  font-weight: $fw-regular;
+
 
   @include breakpoint(medium) {
-    font-size: $fs-4;
+
   }
 
   @include breakpoint(large) {
-    font-size: $fs-4;
+
   }
 
   @include breakpoint(xlarge) {
-    font-size: $fs-5;
+
   }
 }
 
@@ -121,12 +92,9 @@ h2,
 
 /* H3 */
 @mixin type-h3 {
-  font-family: $ff-regular;
-  font-size: $fs-2;
-  font-weight: $fw-regular;
 
   @include breakpoint(medium) {
-    font-size: $fs-3;
+
   }
 }
 
@@ -138,12 +106,10 @@ h3,
 
 /* Paragraph */
 @mixin type-p {
-  font-family: $ff-light;
-  font-size: $fs-1;
-  font-weight: $fw-light;
+
 
   @include breakpoint(medium) {
-    font-size: $fs-2;
+    
   }
 }
 

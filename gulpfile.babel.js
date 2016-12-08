@@ -51,6 +51,7 @@ gulp.task('build', [
   'imagemin',
   'jade',
   'sass',
+  'fonts',
   'browserify'
 ]);
 
@@ -60,6 +61,7 @@ gulp.task('serve', [
   'copy',
   'jade',
   'sass',
+  'fonts',
   'browserify',
   'browserSync',
   'watch'

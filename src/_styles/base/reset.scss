@@ -15,3 +15,7 @@
 .cf {
     *zoom: 1;
 }
+
+.is-accordion-submenu-parent > a::after {
+  border-color: $gray-3 transparent transparent;
+}
