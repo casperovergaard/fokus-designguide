@@ -1,0 +1,80 @@
+/* H1 */
+@mixin type-h1 {
+
+  @include breakpoint(medium) {
+    font-size: $fs-h1;
+  }
+}
+
+.h1 {
+  font-size: $fs-h1;
+}
+
+
+/* H2 */
+@mixin type-h2 {
+
+
+  @include breakpoint(medium) {
+    font-size: $fs-h2;
+  }
+}
+
+.h2 {
+  @include type-h2;
+}
+
+
+/* H3 */
+@mixin type-h3 {
+
+  @include breakpoint(medium) {
+
+  }
+}
+
+h3,
+.h3 {
+  @include type-h3;
+}
+
+
+/* Paragraph */
+@mixin type-p {
+
+
+  @include breakpoint(medium) {
+    font-size: $fs-body;
+  }
+}
+
+.p {
+  @include type-p;
+}
+
+/* Variant */
+.t-em {
+  font-style: italic;
+}
+
+/* Weight */
+.t-black {
+  font-weight: $fw-black;
+}
+
+.t-bold {
+  font-weight: $fw-bold;
+}
+
+.t-medium {
+  font-weight: $fw-medium;
+}
+
+/* Alignment */
+.t-center {
+  text-align: center;
+}
+
+.t-right {
+  text-align: right;
+}

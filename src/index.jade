@@ -5,12 +5,55 @@ block content
     nav
       include _modules/organisms/menu
     main
-      section#overview-introduction
-        h1 introduction
-      section#design-colour
-        h1 colour
-      section#design-typography
-        h1 typo
+      section#introduction
+        .introduction.inner
+          .row
+            .small-12.medium-8.large-6.column
+              h1.t-bold Introduction
+            .small-12.medium-8.large-6.column
+              include _modules/atoms/text-module
+              +introduction
+      section#colours
+        .colours.inner
+          .colours__primary
+            .row
+              .small-12.medium-8.large-6.column
+                h1.h1.t-bold Colours
+            .row
+              .small-12.medium-10.column
+                include _modules/atoms/text-module
+                +colours-primary-text
+            include _modules/molecules/colours
+            +colours-primary
+          .colours__additional
+            .row
+              .small-12.medium-10.column
+                include _modules/atoms/text-module
+                +colours-additional-text
+            include _modules/molecules/colours
+            +colours-additional
+          .colours__accent
+            include _modules/molecules/colours
+            +colours-accent
+      section#typography
+        .typography.inner
+          .row
+            .small-12.medium-8.large-6.column
+              h1.h1.t-bold Typography
+          .row
+            .small-12.medium-10.column
+              include _modules/atoms/text-module
+              +typography-text
+          .row
+            .small-12.columns
+              h2.h2.t-medium.gutter-top Desktop
+          .row
+            .small-12.columns
+              include _modules/atoms/headlines
+              +headline-h1
+              +headline-h2
+              +headline-h3
+              +headline-body
       section#design-logo
         h1 logo
       section#design-favicon

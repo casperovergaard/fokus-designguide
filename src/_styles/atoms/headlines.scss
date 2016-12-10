@@ -1,0 +1,37 @@
+.typography {
+
+  &__h1 {
+    margin: $space 0 $space-lg 0;
+    font-family: $ff-sg-black;
+    font-size: $fs-sg-h1;
+    line-height: rem-calc(46);
+  }
+
+  &__h2 {
+    margin: $space 0 $space-lg 0;
+    font-family: $ff-sg-medium;
+    font-size: $fs-sg-h2;
+    line-height: rem-calc(29);
+  }
+
+  &__h3 {
+    margin: $space 0 $space-lg 0;
+    font-family: $ff-sg-light-italic;
+    font-size: $fs-sg-h3;
+    line-height: rem-calc(21);
+  }
+
+  &__body {
+    margin: $space 0 $space-lg 0;
+    font-family: $ff-sg-light;
+    font-size: $fs-sg-body;
+    line-height: rem-calc(19);
+  }
+
+  p {
+    margin: 0;
+    white-space: normal;
+    word-break: break-all;
+  }
+
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-export default class FullscreenVideo {
+export default class smoothscroll {
   constructor() {
     $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
@@ -8,7 +8,7 @@ export default class FullscreenVideo {
         var target = $(this).attr('href');
         $(target).velocity('scroll', {
             duration: 500,
-            offset: -79,
+            offset: 0,
             easing: 'ease-in-out'
         });
     });

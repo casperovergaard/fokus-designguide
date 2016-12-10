@@ -1,0 +1,189 @@
+.colours {
+  &__primary {
+
+    &__description {
+      margin-top: $space;
+      font-size: $fs-body;
+
+      p {
+        margin: 0;
+        line-height: rem-calc(20)
+      }
+    }
+
+    &__bg {
+      position: relative;
+      width: 100%;
+      height: rem-calc(180);
+
+      .bg--white {
+        height: 100%;
+        background: $white;
+        border: 1px solid $gray-4;
+      }
+
+      .bg--black {
+        height: 100%;
+        background: $color-base-black-1;
+      }
+
+      .bg--blue {
+        height: 100%;
+        background: $color-base-primary-1;
+
+        .blue--1 {
+          position: absolute;
+          top: 0;
+          right: 20%;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-1-1;
+        }
+        .blue--2 {
+          position: absolute;
+          top: 0;
+          right: 10%;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-1-2;
+        }
+        .blue--3 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-1-3;
+        }
+      }
+
+      .bg--red {
+        height: 100%;
+        background: $color-base-primary-2;
+
+        .red--1 {
+          position: absolute;
+          top: 0;
+          right: 20%;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-2-1;
+        }
+        .red--2 {
+          position: absolute;
+          top: 0;
+          right: 10%;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-2-2;
+        }
+        .red--3 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          width: 10%;
+          background: $color-base-primary-2-3;
+        }
+      }
+    }
+  }
+
+  &__additional {
+
+    &__description {
+      margin-top: $space;
+      font-size: $fs-body;
+
+      p {
+        margin: 0;
+        line-height: rem-calc(20)
+      }
+    }
+
+    &__bg {
+      position: relative;
+      width: 100%;
+      height: rem-calc(110);
+
+      .bg--black90 {
+        height: 100%;
+        background: $color-base-black;
+      }
+
+      .bg--black70 {
+        height: 100%;
+        background: $color-base-gray;
+      }
+
+      .bg--black50 {
+        height: 100%;
+        background: $color-base-gray-1;
+      }
+
+      .bg--black30 {
+        height: 100%;
+        background: $color-base-gray-2;
+      }
+
+      .bg--black10 {
+        height: 100%;
+        background: $color-base-gray-3;
+      }
+
+      .bg--black3 {
+        height: 100%;
+        background: $color-base-gray-4;
+      }
+
+      .bg--orange {
+        height: 100%;
+        background: $color-base-secondary-1;
+      }
+
+      .bg--green {
+        height: 100%;
+        background: $color-base-secondary-2;
+      }
+
+      .bg--storm {
+        height: 100%;
+        background: $color-base-secondary-3;
+      }
+    }
+  }
+
+  &__accent {
+
+    &__description {
+      margin-top: $space;
+      font-size: $fs-body;
+
+      p {
+        margin: 0;
+        line-height: rem-calc(20)
+      }
+    }
+
+    &__bg {
+      position: relative;
+      width: 100%;
+      height: rem-calc(110);
+
+      .bg--orange {
+        height: 100%;
+        background: $color-base-secondary-1;
+      }
+
+      .bg--green {
+        height: 100%;
+        background: $color-base-secondary-2;
+      }
+
+      .bg--storm {
+        height: 100%;
+        background: $color-base-secondary-3;
+      }
+    }
+  }
+}

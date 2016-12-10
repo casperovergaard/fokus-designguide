@@ -2,23 +2,23 @@
 ** Layout
 */
 
-// Main layout
+// Container
 .container {
   width: 100%;
   height: 100%;
 }
 
-// Customize row layout
-.row { }
-
-// Sections
-
-main section {
-  min-height: 100vh;
-  height: 100%;
-  padding: $space*2;
+// Sections: Global
+main section .inner {
+  padding: $space;
 
   @include bp(large) {
     margin-left: 25%;
+    padding: rem-calc(150) rem-calc(120) $space*2 rem-calc(120);
   }
+}
+
+// Sections: Colours
+.colours__additional {
+  margin-top: $space-lg;
 }

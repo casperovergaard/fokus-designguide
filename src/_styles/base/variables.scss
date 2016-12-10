@@ -19,7 +19,9 @@ $bp: (
 );
 
 /* Spacing */
-$space : 1.25rem;     // 20px
+$space     : 1.25rem;    // 20px
+$space-md  : 3.75rem;    // 60px
+$space-lg  : 4.375rem;   // 70px
 
 
 /* Colors */
@@ -61,10 +63,10 @@ $gray-4           : $color-base-gray-4;
 
 /* Font families */
 $ff-regular         : "Open Sans";
-$sg-ff-light        : "avenir-light";
-$sg-ff-light-italic : "avenir-lightitalic";
-$sg-ff-medium       : "avenir-medium";
-$sg-ff-black        : "avenir-black";
+$ff-sg-light        : "avenir-light";
+$ff-sg-light-italic : "avenir-lightitalic";
+$ff-sg-medium       : "avenir-medium";
+$ff-sg-black        : "avenir-black";
 
 
 /* Font weights */
@@ -75,13 +77,20 @@ $fw-bold         : 700;
 $fw-black        : 900;
 
 
-/* Font sizes */
-$fs-print-body     : 0.75rem;   // 12px
-$fs-body           : 0.875rem;  // 14px
-$fs-h3             : 1.0625;    // 17px
-$fs-print-headline : 1.125rem;  // 18px
-$fs-h2             : 1.3125rem; // 21px
-$fs-h1             : 2.5rem;    // 40px
+/* Font sizes for style guide content */
+$fs-sg-print-body     : 0.75rem;   // 12px
+$fs-sg-body           : 0.875rem;  // 14px
+$fs-sg-h3             : 1.0625;    // 17px
+$fs-sg-print-headline : 1.125rem;  // 18px
+$fs-sg-h2             : 1.3125rem; // 21px
+$fs-sg-h1             : 2.5rem;    // 40px
+
+/* Font sizes for style guide global */
+$fs-h1   : 1.875rem;   // 30px
+$fs-h2   : 1.3125rem;  // 21px
+$fs-h3   : 1.0625rem;  // 17px
+$fs-body : 0.875rem;   // 14px
+$fs-span : 0.625rem;   // 10px
 
 
 /* Easings */
@@ -100,6 +109,7 @@ $body-font-weight   :   $fw-regular;
 body,
 html {
     height: 100%;
+    width: 100%;
     margin: 0 ;
     padding: 0;
     background: $body-bg;

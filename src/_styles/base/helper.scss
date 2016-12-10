@@ -5,6 +5,7 @@
 // Reset gutters
 .gutter-reset {
   padding: 0;
+  margin: 0;
 }
 .gutter-reset--left {
   @include breakpoint(medium) {
