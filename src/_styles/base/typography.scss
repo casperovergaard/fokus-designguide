@@ -8,14 +8,14 @@
 
 @font-face {
   font-family: 'avenir-light';
-  font-weight: 300;;
+  font-weight: 300;
   font-style: normal;
-  src: url('../fonts/avenir-light2.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/avenir-light2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/avenir-light2.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/avenir-light2.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/avenir-light2.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/avenir-light2.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('../fonts/avenir-light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir-light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir-light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenir-light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenir-light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir-light.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
@@ -28,6 +28,18 @@
       url('../fonts/avenir-lightitalic.woff') format('woff'), /* Pretty Modern Browsers */
       url('../fonts/avenir-lightitalic.ttf')  format('truetype'), /* Safari, Android, iOS */
       url('../fonts/avenir-lightitalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'avenir-regular';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/avenir-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/avenir-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/avenir-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/avenir-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/avenir-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/avenir-regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {

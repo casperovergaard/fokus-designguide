@@ -9,7 +9,7 @@ block content
         .introduction.inner
           .row
             .small-12.medium-8.large-6.column
-              h1.t-bold Introduction
+              h1.h1.t-bold Introduction
             .small-12.medium-8.large-6.column
               include _modules/atoms/text-module
               +introduction
@@ -48,12 +48,49 @@ block content
             .small-12.columns
               h2.h2.t-medium.gutter-top Desktop
           .row
-            .small-12.columns
+            .small-12.columns.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-h1
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
               +headline-h2
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
               +headline-h3
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
               +headline-body
+          .row
+            .small-12.column
+              hr
+          .row
+            .small-12.column
+              h2.h2.t-medium.gutter-top Print
+          .row
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
+              +headline-print-h1
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
+              +headline-print-h2
+            .small-12.columns.gutter-bottom--lg
+              include _modules/atoms/headlines
+              +headline-print-body
+          .row
+            .small-12.column
+              hr
+          .row
+            .small-12.column
+              h2.h2.t-medium.gutter-top Typographic Moodboard
+          .row
+            .small-12.medium-10.column.gutter-bottom--lg
+              include _modules/atoms/text-module
+              +typographic-moodboard-text
+          .row
+            .small-12.column
+              include _modules/atoms/text-module
+              +typographic-moodboard
+              
       section#design-logo
         h1 logo
       section#design-favicon

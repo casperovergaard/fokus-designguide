@@ -57,6 +57,11 @@ h3,
   font-style: italic;
 }
 
+/* Transform */
+.t-caps {
+  text-transform: uppercase;
+}
+
 /* Weight */
 .t-black {
   font-weight: $fw-black;

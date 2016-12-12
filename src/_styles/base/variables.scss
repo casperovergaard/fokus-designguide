@@ -61,10 +61,35 @@ $gray-2           : $color-base-gray-2;
 $gray-3           : $color-base-gray-3;
 $gray-4           : $color-base-gray-4;
 
+$list-colours:
+    ('black' $color-base-black),
+    ('coal' $color-base-black-1),
+    ('white' $color-base-white),
+    ('gray1' $color-base-gray-1),
+    ('gray2' $color-base-gray-2),
+    ('gray3' $color-base-gray-3),
+    ('gray4' $color-base-gray-4),
+    ('ultramarine' $ultramarine),
+    ('coralreef' $coralreef),
+    ('paleorange' $paleorange),
+    ('paleorange' $paleorange),
+    ('kombugreen' $kombugreen),
+    ('stormcloud' $stormcloud);
+
+@each $colour in $list-colours {
+    .bg-#{nth($colour, 1)} {
+        background: nth($colour, 2);
+    }
+    .t-#{nth($colour, 1)} {
+        color: nth($colour, 2);
+    }
+}
+
 /* Font families */
 $ff-regular         : "Open Sans";
 $ff-sg-light        : "avenir-light";
-$ff-sg-light-italic : "avenir-lightitalic";
+$ff-sg-light-italic : "avenir-light-italic";
+$ff-sg-regular      : "avenir-regular";
 $ff-sg-medium       : "avenir-medium";
 $ff-sg-black        : "avenir-black";
 
@@ -72,7 +97,7 @@ $ff-sg-black        : "avenir-black";
 /* Font weights */
 $fw-light        : 300;
 $fw-regular      : 400;
-$fw-medium       : 500;
+$fw-medium       : 600;
 $fw-bold         : 700;
 $fw-black        : 900;
 
@@ -80,7 +105,8 @@ $fw-black        : 900;
 /* Font sizes for style guide content */
 $fs-sg-print-body     : 0.75rem;   // 12px
 $fs-sg-body           : 0.875rem;  // 14px
-$fs-sg-h3             : 1.0625;    // 17px
+$fs-sg-h3             : 1.0625rem; // 17px
+$fs-sg-print-titles   : 0.875rem;  // 14px
 $fs-sg-print-headline : 1.125rem;  // 18px
 $fs-sg-h2             : 1.3125rem; // 21px
 $fs-sg-h1             : 2.5rem;    // 40px
