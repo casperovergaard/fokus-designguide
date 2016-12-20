@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="137px" height="191px" viewBox="0 0 137 191" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Path@2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 97.6935551 83.8878211 9.9475983e-14 129.50929 9.9475983e-14 40.6816064 97.6935551 135.413245 190 87.9132448 190"></polygon>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="135.413245" height="190" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="graphic-element" transform="translate(-517.000000, -1051.000000)" stroke="#F9E0C2" stroke-width="10">
+            <g id="Group" transform="translate(517.000000, 1051.000000)">
+                <g id="favicon-copy-5" transform="translate(0.876549, 0.201566)">
+                    <use id="Path" mask="url(#mask-2)" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

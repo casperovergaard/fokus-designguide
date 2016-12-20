@@ -4,7 +4,7 @@ block content
   .container
     nav
       include _modules/organisms/menu
-    main
+    main#top
       section#introduction
         .introduction.inner
           .row
@@ -26,7 +26,7 @@ block content
           .colours__primary
             .row
               .small-12.medium-8.large-6.column
-                h1.h1.t-bold Colours
+                h1.h1.t-bold Colors
             .row
               .small-12.medium-10.column
                 include _modules/atoms/text-module
@@ -52,33 +52,33 @@ block content
             .small-12.medium-10.column
               include _modules/atoms/text-module
               +typography-text
-          .row
+          .row.gutter-top
             .small-12.columns
               h2.h2.t-medium.gutter-top Desktop
           .row
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-h1
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-h2
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-h3
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-body
           .row
             .small-12.column
               h2.h2.t-medium.gutter-top Print
           .row
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-print-h1
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-print-h2
-            .small-12.columns.gutter-bottom--lg
+            .small-12.columns.gutter-top.gutter-bottom--lg
               include _modules/atoms/headlines
               +headline-print-body
           .row
@@ -171,15 +171,15 @@ block content
               include _modules/atoms/text-module
               +favicon-text
           .row.gutter-top--lg
-            .small-12.medium-4.column
+            .small-12.medium-2.column
               img(src="images/svg/fm-logo-favicon.svg")
           .row.gutter-top--lg
             .small-12.medium-3.column
               .row.medium-unstack
                 .columns
-                  img(src="images/svg/fm-logo-favicon.svg")
+                  img(src="images/svg/fm-logo-favicon.svg", style="width: 75%")
                 .columns
-                  img(src="images/svg/fm-logo-favicon-black.svg")
+                  img(src="images/svg/fm-logo-favicon-black.svg", style="width: 75%")
                 .columns
                   img(src="images/svg/fm-logo-favicon-box.svg")
       section#graphicelement
@@ -190,10 +190,13 @@ block content
           .row
             .small-12.medium-3.column
               img(src="images/svg/fm-logo-paleorange.svg")
-          .row.gutter-top--lg
-            .small-12.medium-10.column
+          .row.medium-unstack.gutter-top--lg
+            .columns
               include _modules/molecules/graphicelement
               +graphicelement-paleorange
+            .columns
+              include _modules/molecules/graphicelement
+              +graphicelement-orange-2
           .row.gutter-top--lg
             .small-12.medium-10.column
               include _modules/atoms/text-module
@@ -224,19 +227,19 @@ block content
               include _modules/atoms/buttons
               +btn-default
             .small-12.medium-6.columns
-              p.p Default. Shadows: #000000 30 % opacity / X: 0, Y: 1 / Blur: 3 / Spread: 0  
+              p.p Default. Default. Shadows: #000000 20 % opacity / X: 2, Y: 4 / blur: 6 / Spread: 0   
           .row.gutter-top
             .small-12.medium-3.columns.fb-center.fb-center--start
               include _modules/atoms/buttons
               +btn-default--hover
             .small-12.medium-6.columns
-              p.p Hover. Shadows: #000000 30 % opacity / X: 2, Y: 2 / Blur: 3 / Spread: 0   
+              p.p Hover. Shadows: #000000 20 % opacity / X: 0, Y: 5 / blur: 11 / Spread: 0   
           .row.gutter-top
             .small-12.medium-3.columns.fb-center.fb-center--start
               include _modules/atoms/buttons
               +btn-default--click
             .small-12.medium-6.columns
-              p.p Click. Shadows: #000000 30 % opacity / X: 2, Y: 2 / Blur: 3 / Spread: 0 / Background: FF6048
+              p.p Click. No shadow / Hex: #FF6048
       section#form-elements
         .form-elements.inner
           .row
@@ -249,6 +252,10 @@ block content
           .row
             .small-12.columns.gutter-top--lg
               h2.h2.t-medium Contact
+          .row
+            .small-12.medium-10.column
+              include _modules/atoms/text-module
+              +form-text
           .row.medium-unstack.gutter-top
             .columns
               include _modules/molecules/form
@@ -256,7 +263,7 @@ block content
             .columns
               include _modules/molecules/form
               +form-error
-      section#data-graphics
+      section#data-graphic
         .data-graphics.inner
           .row
             .small-12.medium-8.large-6.column
@@ -282,15 +289,16 @@ block content
               h2.h2.t-medium Business Cards
           .row.medium-unstack.gutter-top
             .column
-              img(src="images/svg/bc-front.svg")
+              img.shadow-1(src="images/svg/bc-front.svg")
             .column
-              img(src="images/svg/bc-back@2x.png")
+              img.shadow-1(src="images/svg/bc-back@2x.png")
           .row.gutter-top--lg
             .small-12.columns
               h2.h2.t-medium Letters
-          .row.gutter-top
-            .small-10.medium-8.column
-              img(src="images/svg/letter@2x.png")
+          .row.medium-unstack.gutter-top
+            .column
+              img.shadow-1(src="images/svg/letter@2x.png")
+            .column
           .row
             .small-12.columns.gutter-top--lg
               h2.h2.t-medium Website, desktop
@@ -313,11 +321,11 @@ block content
           .row
             .small-12.columns.gutter-top--lg
               h2.h2.t-medium Website, mobile
-          .row.medium-unstack
-            .column
+          .row
+            .small-12.medium-3.column
               include _modules/molecules/frame
               +frame-mobile-content
-            .column
+            .small-12.medium-3.column
               include _modules/molecules/frame
               +frame-mobile-search
           .row
@@ -327,6 +335,7 @@ block content
             .small-12.medium-10.column
               include _modules/atoms/text-module
               +sign-text
-          .row.gutter-top
-            .small-10.medium-6st.column
-              img(src="images/svg/sign-sale.svg")
+          .row.medium-unstack.gutter-top
+            .column
+              img.shadow-1(src="images/png/graphicelement/sign@2x.png")
+            .column

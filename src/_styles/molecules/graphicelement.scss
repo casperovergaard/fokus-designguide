@@ -1,4 +1,12 @@
 .graphicelement {
+  .columns {
+    &.no {
+      &:after {
+        background-image: url("../../images/svg/no.svg");
+      }
+    }
+  }
+
   &__mask {
     position: relative;
     overflow: hidden;
@@ -24,13 +32,20 @@
 
     &--orange {
       &:after {
-        background-image: url("../../images/svg/fm-logo-orange.svg");
+        background-image: url("../../images/svg/fm-logo-paleorange.svg");
+      }
+    }
+
+    &--orange {
+      &:after {
+        background-image: url("../../images/svg/fm-logo-paleorange.svg");
+        left: -10%;
       }
     }
 
     &--orangeoutline {
       &:after {
-        background-image: url("../../images/svg/fm-logo-orange-outline.svg");
+        background-image: url("../../images/svg/fm-logo-paleorange-outline.svg");
       }
     }
 

@@ -16,9 +16,8 @@ import smoothscroll from './components/smoothscroll'
 // Init
 $(() => {
 
-  $("#validate").focus();
-
-  $("#validate").val('Johnson.dk');
+  // $("#validate").focus();
+  // $("#validate").val('Johnson.dk');
 
   $('.menu').velocity({ translateX: 0 });
   // new smoothscroll();

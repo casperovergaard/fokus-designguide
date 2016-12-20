@@ -34,3 +34,10 @@
 @mixin shadow-2 {
   box-shadow: 0 3px 20px rgba(0,0,0,0.2);
 }
+
+.shadow-1 {
+  @include shadow-1
+}
+.shadow-2 {
+  @include shadow-2
+}
