@@ -1,0 +1,135 @@
+.form-elements {
+
+  form {
+    padding: $space;
+    border: 1px solid $gray-2;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: $space;
+
+    &--alignright {
+      justify-content: flex-end;
+    }
+  }
+
+  .inline {
+    position: relative;
+    width: 50%;
+    margin-right: $space;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    padding: $space 0 $space/2 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $gray-2;
+    font-family: $ff-sg-regular;
+    font-size: $fs-body;
+    transition: border-color $easing2 .35s;
+
+    &:focus {
+      outline: none;
+      border-color: $ultramarine;
+    }
+
+    &:focus ~ label,
+    &:valid ~label {
+      top: rem-calc(-5px);
+      font-size: $fs-span;
+      color: $ultramarine;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    height: rem-calc(150px);
+    resize:vertical;
+    z-index: 2;
+    margin-top: $space;
+    background: transparent;
+    border: 1px solid $gray-2;
+    font-family: $ff-sg-regular;
+    font-size: $fs-body;
+    transition: border-color $easing2 .35s;
+
+    &::-webkit-input-placeholder {
+      color: $gray-2;
+      font-family: $ff-sg-regular;
+      font-size: rem-calc(16);
+      margin: rem-calc(5);
+    }
+
+    &:-moz-placeholder {
+      color: $gray-2;
+      font-family: $ff-sg-regular;
+      font-size: rem-calc(16);
+      margin: rem-calc(5);
+    }
+
+    &::-moz-placeholder {
+      color: $gray-2;
+      font-family: $ff-sg-regular;
+      font-size: rem-calc(16);
+      margin: rem-calc(5);
+    }
+
+    &:-ms-input-placeholder {
+      color: $gray-2;
+      font-family: $ff-sg-regular;
+      font-size: rem-calc(16);
+      margin: rem-calc(5);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $ultramarine;
+
+      &::-webkit-input-placeholder {
+        color: $ultramarine;
+      }
+
+      &:-moz-placeholder {
+        color: $ultramarine;
+      }
+
+      &::-moz-placeholder {
+        color: $ultramarine;
+      }
+
+      &:-ms-input-placeholder {
+        color: $ultramarine;
+      }
+
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: rem-calc(21px);
+    left: 0;
+    font-family: $ff-sg-regular;
+    color: $gray-2;
+    transition: top $easing2 .35s, font-size $easing2 .35s;
+  }
+
+  &__error {
+    position: absolute;
+    bottom: rem-calc(-20);
+    font-size: $fs-span;
+    color: $coralreef;
+  }
+}

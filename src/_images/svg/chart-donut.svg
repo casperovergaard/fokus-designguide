@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="229px" height="229px" viewBox="0 0 229 229" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="153.110729" y="52.3749955" width="50" height="37.4782931"></rect>
+    </defs>
+    <g id="styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="data-graphics" transform="translate(-966.000000, -568.000000)">
+            <g id="Group" transform="translate(990.534839, 592.515496)">
+                <g id="Group-Copy" transform="translate(0.989247, 0.625004)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Rectangle-3"></g>
+                    <g id="favicon-copy-3" mask="url(#mask-2)" stroke-width="4" stroke="#4370F7" fill="#4370F7">
+                        <g transform="translate(177.667549, 101.693569) rotate(-270.000000) translate(-177.667549, -101.693569) translate(140.667549, 50.193569)" id="Path">
+                            <polygon points="0.681426468 52.6770389 45.6484822 0.309585769 70.1033209 0.309585769 22.4883114 52.6770389 73.2680648 102.156796 47.8062621 102.156796"></polygon>
+                        </g>
+                    </g>
+                    <path d="M89.175776,178.791448 C138.329119,178.791448 178.175776,138.944791 178.175776,89.7914484 C178.175776,40.6381057 138.329119,0.791448426 89.175776,0.791448426 C40.0224332,0.791448426 0.175775958,40.6381057 0.175775958,89.7914484" id="Oval-2-Copy" stroke="#4370F7" stroke-width="50" transform="translate(89.175776, 89.791448) rotate(-180.000000) translate(-89.175776, -89.791448) "></path>
+                </g>
+                <text id="75-%" font-family="OpenSans-Bold, Open Sans" font-size="30" font-weight="bold" fill="#4370F7">
+                    <tspan x="62" y="99">75 %</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

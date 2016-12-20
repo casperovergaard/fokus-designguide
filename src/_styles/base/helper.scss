@@ -29,9 +29,18 @@
   padding-top: $space;
 }
 
-.gutter-top--lg {
+.gutter-top--md {
   padding-top: $space*2;
 }
+
+.gutter-top--lg {
+  padding-top: $space-md;
+}
+
+.gutter-top--mg {
+  padding-top: $space-lg;
+}
+
 
 // Bottom spacing
 .gutter-bottom {
@@ -47,6 +56,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &--start {
+    justify-content: flex-start;
+  }
 
   &--column {
     flex-direction: column;

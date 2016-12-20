@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="313px" height="313px" viewBox="0 0 313 313" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>pie chart</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="data-graphics" transform="translate(-511.000000, -484.000000)">
+            <g id="pie-chart" transform="translate(511.000000, 474.000000)">
+                <circle id="Oval" fill="#4370F7" cx="156.5" cy="166.5" r="156.5"></circle>
+                <path d="M232.908286,109.493752 L311.750692,243.066605 C301.70107,248.901869 285.666622,255.555267 270.930994,259.435681 C256.195367,263.316096 237.665272,265.267807 231.787964,264.417968 C210.703912,265.262226 176.444786,258.128753 154.159775,244.025216 C153.817369,243.986618 232.908286,109.493752 232.908286,109.493752 Z" id="Triangle-2" fill="#F9E0C2" transform="translate(232.954679, 187.054113) rotate(-74.000000) translate(-232.954679, -187.054113) "></path>
+                <path d="M213.168824,33.3571118 L292.01123,166.929965 C270.09092,179.657887 238.271114,189.557382 212.108163,188.143169 C183.470339,187.789615 156.611428,181.033502 134.326418,166.929965 C133.984011,166.891367 213.168824,33.3571118 213.168824,33.3571118 Z" id="Triangle-2-Copy" fill="#596869" transform="translate(213.168270, 110.817506) rotate(-135.000000) translate(-213.168270, -110.817506) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

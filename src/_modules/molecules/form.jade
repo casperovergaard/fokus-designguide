@@ -1,0 +1,54 @@
+mixin form-default
+  form
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Navn
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Adresse
+    .form-elements__group.form-elements__group--inline
+      .inline
+        input.form-elements__text(type="text", required="")
+        label.form-elements__label Postnummer
+      .inline
+        input.form-elements__text(type="text", required="")
+        label.form-elements__label By
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Telefon
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Mail
+    .form-elements__group
+      textarea.form-elements__textarea(name='text', class='validate[required,length[6,300]]', placeholder='Besked')
+    .form-elements__group.form-elements__group--alignright
+      include ../atoms/buttons
+      +btn-default
+      
+mixin form-error
+  form
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Navn
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Adresse
+    .form-elements__group.form-elements__group--inline
+      .inline
+        input.form-elements__text(type="text", required="")
+        label.form-elements__label Postnummer
+      .inline
+        input.form-elements__text(type="text", required="")
+        label.form-elements__label By
+    .form-elements__group
+      input.form-elements__text(type="text", required="")
+      label.form-elements__label Telefon
+    .form-elements__group
+      input.form-elements__text#validate(type="text", required="")
+      label.form-elements__label Mail
+      span.form-elements__error Email adresse ikke korrekt
+    .form-elements__group
+      textarea.form-elements__textarea(name='text', class='validate[required,length[6,300]]', placeholder='Besked')
+    .form-elements__group.form-elements__group--alignright
+      include ../atoms/buttons
+      +btn-default

@@ -1,0 +1,47 @@
+.graphicelement {
+  &__mask {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content:"";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-repeat:no-repeat;
+      background-size:50%;
+      background-position:left;
+    }
+
+    &--paleorange {
+      &:after {
+        background-image: url("../../images/svg/fm-logo-paleorange.svg");
+      }
+    }
+
+    &--orange {
+      &:after {
+        background-image: url("../../images/svg/fm-logo-orange.svg");
+      }
+    }
+
+    &--orangeoutline {
+      &:after {
+        background-image: url("../../images/svg/fm-logo-orange-outline.svg");
+      }
+    }
+
+    &--inverted {
+      &:after {
+        left: -10%;
+        transform: scaleX(-1);
+        filter: FlipH;
+        background-position: right;
+      }
+    }
+
+  }
+}

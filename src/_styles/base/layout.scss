@@ -9,6 +9,10 @@
 }
 
 // Sections: Global
+main section {
+  min-height: 100vh;
+  height: 100%;
+}
 main section .inner {
   padding: $space;
 
